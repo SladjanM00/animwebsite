@@ -1,0 +1,503 @@
+/* {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+.gentleman {
+  position: relative;
+  background-color: #000;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gentleman h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* NAV Section */
+
+.nav {
+  height: 3rem;
+  background-color: #202022;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav ul li {
+  list-style: none;
+  border: 1px solid #202022;
+  transition: 0.3s ease;
+}
+
+.nav ul li:hover {
+  border-bottom: 1px solid white;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* HERO Section */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  height: 100vh;
+  background-color: #fff;
+  background-image: url(/img/Background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .title {
+  width: 61.8%;
+  line-height: 9rem;
+  margin-bottom: 8rem;
+}
+
+.hero .title h1 {
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 10rem;
+  padding: 15rem 0 0 38rem;
+}
+
+.hero .title .for {
+  position: absolute;
+  top: 22.5rem;
+  text-transform: lowercase;
+  font-family: "Dancing Script", cursive;
+  color: #e5842a;
+  font-size: 12rem;
+}
+
+.hero .title .men {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16rem;
+  margin-left: 15rem;
+}
+
+.hero .fimg1 {
+  position: absolute;
+  top: 0;
+  right: 8rem;
+  width: 25%;
+}
+
+.hero .fimg2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.hero .sub-title {
+  padding: 0rem 0 0 38rem;
+}
+
+.hero .sub-title p {
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+
+.main-button {
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.main-button .fa-arrow-right-long {
+  padding-left: 1rem;
+}
+
+.main-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.feature-button {
+  border: 1px solid #fff;
+  background-color: #202022;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.feature-button .fa-arrow-right-long {
+  padding-left: 1rem;
+}
+
+.feature-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* FEATURE SECTION */
+
+.feature {
+  display: flex;
+}
+
+.feature-text {
+  background-color: #202022;
+  height: 110vh;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6rem 0rem 6rem 7rem;
+}
+
+.feature .feature-text h1 {
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 7rem;
+}
+
+.feature .feature-p p {
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.feature .feature-image {
+  background-image: url(/img/Feature\ Image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  padding-bottom: 3rem;
+}
+
+.feature .feature-text .main-button {
+  border: 1px solid white;
+  background-color: #202022;
+}
+
+@media only screen and (max-width: 1570px) {
+  .feature .feature-text h1 {
+    font-size: 8rem;
+  }
+
+  .feature .feature-p p {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .feature .feature-text h1 {
+    font-size: 7rem;
+  }
+
+  .feature .feature-p p {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  .feature .feature-text h1 {
+    font-size: 5.5rem;
+  }
+}
+
+@media only screen and (max-width: 1035px) {
+  .feature .feature-text h1 {
+    font-size: 4.5rem;
+  }
+
+  .feature .feature-p p {
+    font-size: 1rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .feature {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 180vh;
+  }
+
+  .feature .feature-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5rem;
+  }
+
+  .feature .feature-image {
+    background-position: 50% 40%;
+  }
+
+  .feature .feature-text h1 {
+    font-size: 7.5rem;
+    margin: 4rem 0;
+  }
+
+  .feature .feature-p p {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .feature .feature-button {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .feature {
+    height: 110vh;
+  }
+
+  .feature .feature-text h1 {
+    font-size: 4.5rem;
+  }
+
+  .feature .feature-p p {
+    font-size: 1.5rem;
+  }
+
+  .feature .feature-button {
+    font-size: 1.2rem;
+  }
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 1000px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 3rem;
+    font-size: 5rem;
+  }
+
+  .gentleman {
+    height: 10rem;
+  }
+
+  .gentleman h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .hero {
+    padding-left: 15rem;
+  }
+}
+
+@media only screen and (max-width: 1670px) {
+  .hero {
+    padding-left: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .hero {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .hero .title h1 {
+    padding: 15rem 0 0 25rem;
+  }
+
+  .hero .sub-title {
+    padding: 0rem 0 0 25rem;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .hero .title h1 {
+    padding: 15rem 0 0 15rem;
+  }
+
+  .hero .sub-title {
+    padding: 0rem 0 0 15rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero .title h1 {
+    font-size: 8rem;
+  }
+
+  .hero .title .men {
+    font-size: 15rem;
+    margin-left: 7rem;
+  }
+
+  .hero .title .for {
+    top: 20.5rem;
+    left: 14rem;
+    font-size: 7rem;
+  }
+
+  .hero .sub-title {
+    padding: 0rem 0 0 15rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .hero .images {
+    display: none;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero .title {
+    line-height: 11rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero .title h1 {
+    padding: 0;
+    font-size: 10rem;
+  }
+
+  .hero .title .men {
+    font-size: 18rem;
+    margin-left: 0;
+  }
+
+  .hero .title .for {
+    position: relative;
+    top: -7.5rem;
+    left: 2rem;
+    font-size: 10rem;
+  }
+
+  .hero .sub-title {
+    padding: 0;
+    text-align: center;
+  }
+
+  .hero .sub-title p {
+    text-align: start;
+    font-size: 2rem;
+  }
+
+  .hero .sub-title .main-button {
+    font-size: 2.3rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .hero .title {
+    line-height: 6rem;
+  }
+
+  .hero .title h1 {
+    padding: 0;
+    font-size: 6rem;
+  }
+
+  .hero .title .men {
+    font-size: 8rem;
+  }
+
+  .hero .title .for {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 8rem;
+  }
+
+  .hero .sub-title p {
+    margin: 0 4rem 6rem 4rem;
+    text-align: start;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .gentleman h1 {
+    font-size: 2.5rem;
+    padding-right: 5rem;
+  }
+}
